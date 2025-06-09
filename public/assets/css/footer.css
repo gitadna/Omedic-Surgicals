@@ -1,0 +1,26 @@
+    .omedic-footer {
+        width: 100%;
+       background: linear-gradient(90deg, #2563eb, #60a5fa);
+        color: white;
+    }
+
+    .omedic-footer .omedic-footer-container {
+        padding: 40px 15px 20px;
+    }
+
+    .omedic-footer .omedic-footer-icons a {
+        font-size: 1.25rem;
+        color: white;
+        transition: 0.3s;
+    }
+
+    .omedic-footer .omedic-footer-icons a:hover {
+        color: #dbeafe;
+    }
+
+    .omedic-footer .omedic-footer-bottom {
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        font-size: 0.875rem;
+        padding-top: 10px;
+        text-align: center;
+    }
