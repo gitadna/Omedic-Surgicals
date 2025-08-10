@@ -49,9 +49,100 @@
             <?php endif; ?>
         </div>
 
+        <!-- Testimonials -->
+        <section class="container py-5">
+            <div class="text-center mb-4">
+                <h2 class="section-title">What Surgeons Say</h2>
+                <p class="section-subtitle">Real feedback from plastic, micro, and reconstructive units.</p>
+            </div>
 
-
-
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row g-4 justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8">
+                                <div class="testimonial-card p-4 p-md-5">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img class="testimonial-avatar me-3" src="https://i.pravatar.cc/80?img=12" alt="Surgeon avatar">
+                                        <div>
+                                            <h6 class="mb-0">Dr. A. Hussain</h6>
+                                            <small class="text-muted">Consultant Plastic Surgeon</small>
+                                        </div>
+                                    </div>
+                                    <div class="star-rating mb-2 text-warning">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="mb-0 testimonial-quote">The balance and fine tips are exceptional. Suturing under magnification feels effortless, with consistent, repeatable control.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row g-4 justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8">
+                                <div class="testimonial-card p-4 p-md-5">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img class="testimonial-avatar me-3" src="https://i.pravatar.cc/80?img=21" alt="Surgeon avatar">
+                                        <div>
+                                            <h6 class="mb-0">Prof. R. Mehra</h6>
+                                            <small class="text-muted">Head of Microvascular Unit</small>
+                                        </div>
+                                    </div>
+                                    <div class="star-rating mb-2 text-warning">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                    </div>
+                                    <p class="mb-0 testimonial-quote">Clamps hold consistently without trauma. The finish and feel match premium brands at far better value.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row g-4 justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8">
+                                <div class="testimonial-card p-4 p-md-5">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img class="testimonial-avatar me-3" src="https://i.pravatar.cc/80?img=36" alt="Surgeon avatar">
+                                        <div>
+                                            <h6 class="mb-0">Dr. S. Qureshi</h6>
+                                            <small class="text-muted">Reconstructive Surgeon</small>
+                                        </div>
+                                    </div>
+                                    <div class="star-rating mb-2 text-warning">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                    <p class="mb-0 testimonial-quote">Reliable, lightweight instruments that reduce fatigue in long cases. Customization options are a big plus.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
 
     </div>
     <?php include('footer.php'); ?>
