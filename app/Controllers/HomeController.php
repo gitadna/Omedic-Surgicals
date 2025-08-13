@@ -10,16 +10,63 @@ class HomeController extends BaseController
         return view('user/home');
     }
 
+    public function neuro_home()
+    {
+        return view('user/Neuro/neuro_home');
+    }
+
+    public function plastic_home()
+    {
+        return view('user/Plastic/plastic_home');
+    }
+
+    public function microforceps()
+    {
+        return view('user/Plastic/Categories/micro_forceps');
+    }
+
+    public function microscissors()
+    {
+        return view('user/Plastic/Categories/micro_scissors_and_micro_needle_holder');
+    }
+
+    public function microvascularclamps()
+    {
+        return view('user/Plastic/Categories/microvascular_clamps');
+    }
+
+
+    public function tray()
+    {
+        return view('user/Plastic/Categories/tray');
+    }
+
+    public function instrumentssets()
+    {
+        return view('user/Plastic/Categories/instrument_sets');
+    }
+
     public function plastic_surgeon()
     {
         $db = \Config\Database::connect();
         $builder = $db->table('products');
         $builder->where('category', 'Plastic');
         $query = $builder->get();
-        $data['products'] = $query->getResultArray();
+        $products = $query->getResultArray();
+
+        // Fetch attributes for each product
+        foreach ($products as &$product) {
+            $attrQuery = $db->table('product_attributes')
+                ->where('product_id', $product['id'])
+                ->get();
+            $product['attributes'] = $attrQuery->getResultArray();
+        }
+
+        $data['products'] = $products;
 
         return view('user/plastic_surgeon', $data);
     }
+
 
 
     public function neuro_surgeon()
@@ -28,7 +75,17 @@ class HomeController extends BaseController
         $builder = $db->table('products');
         $builder->where('category', 'Neuro');
         $query = $builder->get();
-        $data['products'] = $query->getResultArray();
+        $products = $query->getResultArray();
+
+        // Fetch attributes for each product
+        foreach ($products as &$product) {
+            $attrQuery = $db->table('product_attributes')
+                ->where('product_id', $product['id'])
+                ->get();
+            $product['attributes'] = $attrQuery->getResultArray();
+        }
+
+        $data['products'] = $products;
 
         return view('user/neuro_surgeon', $data);
     }

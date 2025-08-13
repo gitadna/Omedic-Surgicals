@@ -8,7 +8,7 @@
         }
 
         .homepage_heading {
-            color: #ffffff;
+            color: #0056b3;
             font-size: 3rem;
             font-weight: 700;
             margin-bottom: 0px;
@@ -17,7 +17,7 @@
 
         .homepage_para,
         .homepage_italic {
-            color: #f8f9fa;
+            color: #0056b3;
             font-size: 1.25rem;
             margin-bottom: 20px;
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
@@ -63,7 +63,7 @@
         }
 
         .gradient-text {
-            background: linear-gradient(90deg, #2563eb, #60a5fa);
+            background: #0056b3;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             animation: fadeInDown 1s ease forwards;
@@ -83,7 +83,7 @@
         .underline {
             width: 80px;
             height: 4px;
-            background: #2563eb;
+            background: #0056b3;
             margin: 0 auto;
             border-radius: 2px;
             box-shadow: 0 0 8px #2563eb88;
@@ -92,6 +92,10 @@
         }
 
         /* product card css */
+        .glass-img-wrapper {
+        position: relative;
+        overflow: hidden;
+        }
 
         .product-card {
             background: linear-gradient(90deg, #2563eb, #60a5fa);
@@ -108,9 +112,10 @@
 
         .product-img {
             border-radius: 20px;
-            height: 220px;
+            height: 250px;
             object-fit: cover;
-
+            transition: transform 0.3s ease;
+        transform-origin: center center;
         }
 
         /* About us page css */
@@ -122,16 +127,17 @@
         .about-title {
             font-weight: 700;
             font-size: 2.5rem;
+            
         }
 
         .highlight {
-            color: #0d6efd;
+            color: #0056b3;
             font-weight: 600;
         }
 
         .info-card {
             background: #ffffff;
-            border-left: 5px solid #0d6efd;
+            border-left: 5px solid #0056b3;
             padding: 25px;
             border-radius: 10px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -145,7 +151,7 @@
 
         .info-icon {
             font-size: 2rem;
-            color: #0d6efd;
+            color: #0056b3;
             margin-right: 15px;
         }
 
@@ -191,7 +197,7 @@
         }
 
         .sp-form-control:focus {
-            border-color: #007bff;
+            border-color: #0056b3;
             box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
         }
 
@@ -199,8 +205,8 @@
             padding: 12px 30px;
             font-size: 16px;
             border-radius: 30px;
-            background-color: #90e0ef;
-            color: white;
+            background-color: #d8e5fc;
+            color: #000000;
             transition: background-color 0.3s ease, transform 0.2s ease;
         }
 
@@ -211,7 +217,7 @@
 
         .sp-contact-card {
             background-color: #ffffff;
-            border-left: 5px solid #0d6efd;
+            border-left: 5px solid #0056b3;
             padding: 25px;
             border-radius: 10px;
             margin-bottom: 30px;
@@ -258,19 +264,19 @@
         }
 
         .sp-contact-card {
-            border-left: 5px solid #0d6efd;
+            border-left: 5px solid #0056b3;
             margin-bottom: 30px;
         }
 
         .sp-contact-icon {
-            color: #0d6efd;
+            color: #0056b3;
             font-size: 1.8rem;
             margin-right: 15px;
         }
 
         .sp-contact-pill {
             background-color: #ffffff;
-            color: #0d6efd;
+            color: #0056b3;
             font-weight: 500;
             padding: 10px 20px;
             border-radius: 50px;
@@ -301,7 +307,7 @@
         }
 
         .sp-form-subtitle {
-            color: #dbeafe;
+            color: #ffffff;
             font-size: 1rem;
         }
 
@@ -320,22 +326,7 @@
             box-shadow: 0 0 10px rgba(13, 110, 253, 0.4);
         }
 
-        .sp-btn-submit {
-            background: #90e0ef;
-            color: #fff;
-            font-weight: 600;
-            border: none;
-            border-radius: 30px;
-            padding: 14px 20px;
-            font-size: 1rem;
-            transition: 0.3s ease;
-            box-shadow: 0 4px 20px rgba(13, 110, 253, 0.5);
-        }
-
-        .sp-btn-submit:hover {
-            background: #90e0ef;
-            transform: scale(1.05);
-        }
+    
 
         .responsive-map {
             overflow: hidden;
@@ -356,6 +347,19 @@
             font-weight: 600;
             text-align: center;
             font-size: 3.5rem;
+            background: linear-gradient(90deg, #0d6efd, #6610f2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .coming_soon_message_heading{
+          font-weight: 600;
+            text-align: center;
             background: linear-gradient(90deg, #0d6efd, #6610f2);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -488,16 +492,7 @@
         border-radius: 10px;
         }
 
-        .sp-btn-submit {
-        background-color: #5ef363;
-        color: white;
-        font-weight: bold;
-        transition: background-color 0.3s ease;
-        }
 
-        .sp-btn-submit:hover {
-        background-color: #5ef363;
-        }
 
         @media (max-width: 767.98px) {
         .contact-bg-img {

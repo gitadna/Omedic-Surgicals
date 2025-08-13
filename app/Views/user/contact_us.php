@@ -19,8 +19,8 @@
     <?php include('navbar.php'); ?>
 
     <div class="container sp-contact-wrapper animate__animated animate__fadeIn">
-        <h1 class="text-center sp-contact-heading mb-3" style="color:#0d6efd">Get in Touch</h1>
-        <p class="text-center sp-contact-info" style="color: #0d6efd">
+        <h1 class="text-center sp-contact-heading mb-3" style="color:#0056b3">Get in Touch</h1>
+        <p class="text-center sp-contact-info" style="color: #0056b3">
             Feel free to check out the various kinds of micro-surgical equipment that we have in our portfolio.
             <br>You can contact us through the following channels:
         </p>
@@ -31,7 +31,11 @@
             </div>
             <div class="sp-contact-pill d-flex align-items-center">
                 <i class="fas fa-phone-alt me-2"></i>
-                +91-9876543210
+                +91-7574022543
+            </div>
+            <div class="sp-contact-pill d-flex align-items-center">
+                <i class="fas fa-phone-alt me-2"></i>
+                +91-9970422100
             </div>
         </div>
 
@@ -76,7 +80,7 @@
                     <h3>Contact Us</h3>
                     <div class="info-item"><i class="fas fa-map-marker-alt"></i> 23 Avenue de Paris, 75012 Paris</div>
                     <div class="info-item"><i class="fas fa-envelope"></i> hello@omedic.com</div>
-                    <div class="info-item"><i class="fas fa-phone"></i> +91-9876543210</div>
+                    <div class="info-item"><i class="fas fa-phone"></i> +91-7574022543</div>
                     <div class="info-item"><i class="fas fa-user"></i> Omedic Surgicals</div>
                     <div class="social-icons mt-3">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -110,8 +114,8 @@
             <div class="row align-items-center min-vh-100">
 
                 <div class="col-md-6 d-none d-md-block text-center">
-                    <img src="assets/google-map-icon.png" alt="Company Logo" class="img-fluid"
-                        style="max-width: 300px;">
+                    <img src="assets/omedic_surgical_logo.png" alt="Company Logo" class="img-fluid"
+                        style="width: 350px;">
                 </div>
 
 

@@ -26,15 +26,19 @@
             <div class="col-md-4 mb-3">
                 <h5 class="fw-bold">Connect With Us</h5>
                 <div class="d-flex justify-content-center justify-content-md-start gap-3 omedic-footer-icons mt-2">
-                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://wa.me/1234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.facebook.com/share/1MMx1hz2J6/?mibextid=wwXIfr" target="_blank"><i
+                            class="fab fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/company/omedic-surgicals/" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://wa.me/7574022543" target="_blank"><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
         </div>
 
         <div class="omedic-footer-bottom mt-3">
-            &copy; <?= date('Y') ?> Omedic Surgicals. All rights reserved.
+            &copy; <?= date('Y') ?> Omedic Surgicals. All rights reserved.<br>
+            Developed by <a href="https://shivamoza.in/" target="_blank" class="custom-link">Shivam Oza</a>
         </div>
+
     </div>
 </footer>

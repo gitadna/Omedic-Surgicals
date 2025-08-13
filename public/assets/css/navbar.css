@@ -5,7 +5,7 @@
   --header-height: 3.5rem;
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: hsl(220, 68%, 54%);
+  --first-color: #0056b3;
   --first-color-lighten: hsl(220, 68%, 97%);
   --title-color: hsl(220, 48%, 28%);
   --text-color: hsl(220, 12%, 45%);
@@ -144,9 +144,17 @@ a {
   align-items: center;
   transition: background-color 0.3s;
 }
+
+
 .nav__link:hover {
   background-color: var(--first-color-lighten);
 }
+
+.category_button{
+  background-color: var(--first-color);
+  border-radius: 20px;
+}
+
 
 /* Show menu */
 .show-menu {
@@ -263,9 +271,12 @@ a {
   }
   .dropdown__container {
     height: max-content;
+    width: 220px;
     position: absolute;
-    left: 0;
-    right: 0;
+    border-radius: 5px;
+    align-items: center;
+    /* left: 0;
+    right: 0; */
     top: 6.5rem;
     background-color: var(--body-color);
     box-shadow: 0 6px 8px hsla(220, 68%, 12%, 0.05);
@@ -273,6 +284,19 @@ a {
     opacity: 0;
     transition: top 0.4s, opacity 0.3s;
   }
+
+  .dropdown__link {
+  display: block;
+  padding: 0.5rem 1rem;
+  font-size: var(--normal-font-size);
+  color: var(--text-color);
+  transition: background-color 0.2s ease;
+}
+
+.dropdown__link:hover {
+  background-color: var(--first-color-lighten);
+  color: var(--first-color);
+}
   .dropdown__content {
     grid-template-columns: repeat(4, max-content);
     column-gap: 6rem;
@@ -329,3 +353,67 @@ a {
     padding: 0 0.75rem;
   }
 }
+
+.floating-call-btn-whatsapp{
+  display: none;
+}
+
+
+.floating-call-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: var(--first-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+
+
+.floating-call-btn:hover {
+    background-color: var(--first-color);
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .floating-call-btn-whatsapp {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366 ;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.floating-call-btn-whatsapp:hover{
+  background-color: #128c7e;
+    transform: scale(1.05);
+}
+}
+
+
+
+
+
+

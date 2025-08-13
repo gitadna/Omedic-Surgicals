@@ -24,7 +24,7 @@
     <?php include('navbar.php'); ?>
 
     <div class="container sp-about-wrapper animate__animated animate__fadeIn">
-        <h1 class="text-center text-primary about-title mb-4">About Us</h1>
+        <h1 class="text-center gradient-text about-title mb-4">About Us</h1>
         <p class="lead text-center mb-5">Delivering precision, quality, and innovation in microsurgical instruments.</p>
 
         <div class="row mb-4">

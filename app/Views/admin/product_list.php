@@ -94,28 +94,60 @@
                         <th>Name</th>
                         <th>Description</th>
                         <th>Category</th>
+                        <th>Sub Category</th>
                         <th>Image</th>
+                        <th>Attributes</th>
                         <th>Actions</th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php foreach ($products as $product): ?>
+                        <?php $rowspan = max(1, count($product['attributes'])); ?>
                         <tr>
-                            <td><?= htmlspecialchars($product['name']) ?></td>
-                            <td><?= htmlspecialchars($product['description']) ?></td>
-                            <td><?= htmlspecialchars($product['category']) ?></td>
-                            <td>
+                            <td rowspan="<?= $rowspan ?>"><?= htmlspecialchars($product['name']) ?></td>
+                            <td rowspan="<?= $rowspan ?>"><?= htmlspecialchars($product['description']) ?></td>
+                            <td rowspan="<?= $rowspan ?>"><?= htmlspecialchars($product['category']) ?></td>
+                            <td rowspan="<?= $rowspan ?>"><?= htmlspecialchars($product['subcategory']) ?></td>
+                            <td rowspan="<?= $rowspan ?>">
                                 <img src="<?= base_url('uploads/' . $product['image']) ?>" class="img-thumbnail" width="70">
                             </td>
+
+                            <?php if (!empty($product['attributes'])): ?>
+                                <?php $first = true;
+                                foreach ($product['attributes'] as $attr): ?>
+                                    <?php if (!$first): ?>
+                                    <tr><?php endif; ?>
+                                    <td>
+                                        <strong>Length:</strong> <?= $attr['length'] ?> |
+                                        <strong>Diameter:</strong> <?= $attr['diameter'] ?> |
+                                        <strong>Blade:</strong> <?= $attr['blade_length'] ?> |
+                                        <strong>Tip:</strong> <?= $attr['tip_value'] ?>
+                                    </td>
+                                    <?php if ($first): ?>
+                                        <td rowspan="<?= $rowspan ?>">
+                                            <div class="btn-container">
+                                                <a href="<?= site_url('products/edit/' . $product['id']) ?>"
+                                                    class="btn btn-warning btn-sm">Edit</a>
+                                                <a href="<?= site_url('products/delete/' . $product['id']) ?>"
+                                                    class="btn btn-danger btn-sm" onclick="return confirm('Are you sure?')">Delete</a>
+                                            </div>
+                                        </td>
+                                    <?php endif; ?>
+                                </tr>
+                                <?php $first = false; ?>
+                            <?php endforeach; ?>
+                        <?php else: ?>
+                            <td>No attributes</td>
                             <td>
                                 <div class="btn-container">
                                     <a href="<?= site_url('products/edit/' . $product['id']) ?>"
                                         class="btn btn-warning btn-sm">Edit</a>
-                                    <a href="<?= site_url('products/delete/' . $product['id']) ?>"
-                                        class="btn btn-danger btn-sm" onclick="return confirm('Are you sure?')">Delete</a>
+                                    <a href="<?= site_url('products/delete/' . $product['id']) ?>" class="btn btn-danger btn-sm"
+                                        onclick="return confirm('Are you sure?')">Delete</a>
                                 </div>
                             </td>
-                        </tr>
+                            </tr>
+                        <?php endif; ?>
                     <?php endforeach; ?>
                 </tbody>
             </table>
