@@ -27,7 +27,7 @@
         <div class="d-flex justify-content-center flex-wrap gap-3 my-4">
             <div class="sp-contact-pill d-flex align-items-center">
                 <i class="fas fa-envelope me-2"></i>
-                info@surgicalportal.com
+                omedicsurgicals@gmail.com
             </div>
             <div class="sp-contact-pill d-flex align-items-center">
                 <i class="fas fa-phone-alt me-2"></i>
@@ -35,7 +35,7 @@
             </div>
             <div class="sp-contact-pill d-flex align-items-center">
                 <i class="fas fa-phone-alt me-2"></i>
-                +91-9970422100
+                +91-6354248072
             </div>
         </div>
 
@@ -64,7 +64,7 @@
                 <div class="sp-contact-card d-flex align-items-center w-100">
                     <i class="fas fa-clock sp-contact-icon"></i>
                     <div>
-                        <h6 class="fw-bold mb-1">Working Hours</h6>
+                        <h6 class="fw-bold mb-1">Office Timing</h6>
                         <p class="mb-0">Mon - Sat: 9:00 AM – 6:00 PM</p>
                     </div>
                 </div>

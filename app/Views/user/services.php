@@ -18,279 +18,346 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
     <style>
-        .timeline-section {
-            background: #f0f9ff;
-            padding: 60px 20px;
-            font-family: 'Segoe UI', sans-serif;
-        }
-
-        .timeline-title {
-            text-align: center;
-            font-size: 2rem;
-            color: #007bff;
-            margin-bottom: 40px;
-        }
-
-        .timeline {
-            position: relative;
-            max-width: 1000px;
-            margin: auto;
-        }
-
-        .timeline::after {
-            content: '';
-            position: absolute;
-            width: 4px;
-            background-color: #00bcd4;
-            top: 0;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-        .timeline-item {
-            padding: 20px 40px;
-            position: relative;
-            width: 50%;
-            opacity: 0;
-            transform: translateY(40px);
-            transition: all 0.6s ease;
-        }
-
-        .timeline-item.animate.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .timeline-item.left {
-            left: 0;
-            text-align: right;
-        }
-
-        .timeline-item.right {
-            left: 50%;
-            text-align: left;
-        }
-
-        .timeline-item .content {
-            background: white;
-            padding: 20px;
-            position: relative;
+        .feature-card {
             border-radius: 12px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            background: linear-gradient(90deg, rgb(199, 210, 232), #60a5fa);
+
+            transition: all 0.3s ease-in-out;
+            color: #000000;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
         }
 
-        .timeline-item .icon {
-            width: 50px;
-            height: 50px;
-            background: linear-gradient(135deg, #00bcd4, #007bff);
-            color: white;
+        .feature-card:hover {
+            background: #f8f9fa;
+            color: #000000;
+            transform: translateY(-6px);
+        }
+
+        .feature-card:hover i,
+        .feature-card:hover h5,
+        .feature-card:hover p {
+            color: #000000 !important;
+        }
+
+        .timeline-horizontal {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 2rem;
+            padding: 2rem 1rem;
+        }
+
+        .timeline-horizontal .timeline-step {
+            flex: 1;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .timeline-horizontal .icon {
+            width: 60px;
+            height: 60px;
             border-radius: 50%;
-            display: inline-flex;
+            background: linear-gradient(90deg, #60a5fa, #2563eb);
+            color: #fff;
+            display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.4rem;
+            margin: 0 auto 1rem;
+            font-size: 1.5rem;
+            z-index: 2;
+            position: relative;
+        }
+
+        /* Curved center line */
+        .timeline-horizontal .timeline-line {
             position: absolute;
-            top: 20px;
-            left: -25px;
+            top: 40px;
+            /* aligns with icons */
+            left: 0;
+            right: 0;
+            height: 120px;
+            background: none;
+            border-top: 4px solid #60a5fa;
+            border-radius: 100px / 50px;
+            /* ellipse curve */
+            z-index: 0;
         }
 
-        .timeline-item.right .icon {
-            left: auto;
-            right: -25px;
-        }
-
-        .timeline-item h3 {
-            margin-top: 10px;
+        /* Step text */
+        .timeline-horizontal h5 {
+            font-weight: 600;
             color: #007bff;
-            font-size: 1.2rem;
         }
 
-        .timeline-item p {
-            font-size: 0.95rem;
+        .timeline-horizontal p {
+            font-size: 0.9rem;
             color: #555;
-            margin-top: 5px;
+            max-width: 180px;
+            margin: 0 auto;
         }
 
-        /* Mobile Responsive */
-        @media screen and (max-width: 768px) {
-            .timeline::after {
-                left: 8px;
-            }
+        /* Mobile fallback */
+        .timeline-vertical {
+            padding: 20px;
+        }
 
-            .timeline-item {
-                width: 100%;
-                padding-left: 60px;
-                padding-right: 25px;
-            }
+        .custom-card {
+            border-radius: 15px;
+            background: #f9fafb;
+            border: 1px solid #e6e9ec;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+        }
 
-            .timeline-item.right {
-                left: 0;
-            }
+        .custom-card:hover {
+            transform: translateY(-5px);
+            background: #ffffff;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        }
 
-            .timeline-item .icon {
-                left: 0;
-            }
+        .icon-box {
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-            .timeline-item.right .icon {
-                right: auto;
-            }
+        .warning-box {
+            background: #007bff
+        }
 
-            .timeline-item .content {
-                text-align: left;
-            }
+        .importantnotice-box {
+            background: #FE5757;
         }
     </style>
 
 
 </head>
 
-<body class="bg-light text-center d-flex flex-column min-vh-100">
+<body class="bg-light d-flex flex-column min-vh-100">
 
     <?php include('navbar.php'); ?>
 
-    <div class="container-heading sp-page-wrapper mb-5">
-        <div class=" text-center mb-5 intro-section">
-            <h3 class="gradient-text fw-bold display-4 mb-3">
-                Our Services
-            </h3>
-            <div class="underline"></div>
-            <p class="intro-text mx-auto mt-4 px-3 px-md-5">
-                We offer a range of services including surgical product supply, consultation, and technical support.
-            </p>
-        </div>
+    <!-- Main content wrapper -->
+    <main class="flex-grow-1">
+        <div class="container-heading sp-page-wrapper mb-5">
+            <section class="container py-5">
+                <!-- Row 1: Heading + 2 Cards -->
+                <div class="row align-items-start mb-4">
+                    <!-- Left Heading -->
+                    <div class="col-lg-4 mb-4 mb-lg-0 d-flex align-items-center">
+                        <h2 class="fw-bold text-start text-black">Special Manufacturing Services</h2>
+                    </div>
 
-        <div class="container mt-5">
-            <div class="row g-4 justify-content-center">
-                <div class="col-12 col-sm-6 col-md-4">
-                    <div class="service-box">
-                        <div class="service-icon"><i class="bi bi-gear-fill"></i></div>
-                        <div>Design and manufacture surgical instruments</div>
+                    <!-- 2 Cards beside Heading -->
+                    <div class="col-lg-8">
+                        <div class="row g-4">
+                            <div class="col-6 col-md-6">
+                                <div class="feature-card h-100 text-start p-4">
+                                    <i class="bi bi-phone-vibrate fs-2 mb-3"></i>
+                                    <h6 class="fw-400">Design and manufacturer surgical instrument</h6>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-6">
+                                <div class="feature-card h-100 text-start p-4">
+                                    <i class="bi bi-heart-pulse fs-2 mb-3"></i>
+                                    <h6 class="fw-400">Machining of raw parts</h6>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4">
-                    <div class="service-box">
-                        <div class="service-icon"><i class="bi bi-tools"></i></div>
-                        <div>Machining of raw parts</div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4">
-                    <div class="service-box">
-                        <div class="service-icon"><i class="bi bi-nut-fill"></i></div>
-                        <div>Assembly of surgical instruments</div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4">
-                    <div class="service-box">
-                        <div class="service-icon"><i class="bi bi-shield-check"></i></div>
-                        <div>Finishing of surgical instruments</div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4">
-                    <div class="service-box">
-                        <div class="service-icon"><i class="bi bi-brush-fill"></i></div>
-                        <div>Polishing, brushing, shining and coating</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class=" text-center mb-5 intro-section mt-5">
-            <h3 class="gradient-text fw-bold display-4 mb-3">
-                Warranty Service
-            </h3>
-            <div class="underline"></div>
-            <p class="intro-text mx-auto mt-4 px-3 px-md-5">
-                We will repair or replace the instrument in case of defective material or poor workmanship. Any other
-                malfunction or defect as a result of misuse of the instrument or not respecting our instrument care
-                guide, will not come under warranty.
-            </p>
-        </div>
-        <div class=" text-center mb-5 intro-section mt-5">
-            <h3 class="gradient-text fw-bold display-4 mb-3">
-                Warning
-            </h3>
-            <div class="underline"></div>
-            <p class="intro-text mx-auto mt-4 px-3 px-md-5">
-                Before sending instruments for repair, it should be cleaned, and sterilized in the same way as if it
-                goes to the operating theatre.misuse of the instrument or not respecting our instrument care
-                guide, will not come under warranty.
-            </p>
-            <p class="intro-text mx-auto mt-4 px-3 px-md-5">
-                Returned instruments after repair, should be treated as the a new instruments and should go to the same
-                process of cleaning and sterilization before use.
-            </p>
-        </div>
 
-        <section class="timeline-section">
-            <h2 class="timeline-title">Instrument Cleaning Process</h2>
-            <div class="timeline">
-                <div class="timeline-item left animate">
-                    <div class="content">
+                <!-- Row 2: 3 Full-Width Cards -->
+                <div class="row g-4">
+                    <div class="col-6 col-md-4">
+                        <div class="feature-card h-100 text-start p-4">
+                            <i class="bi bi-people fs-2 mb-3"></i>
+                            <h6 class="fw-">Assembly of surgical instruments</h6>
+
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <div class="feature-card h-100 text-start p-4">
+                            <i class="bi bi-activity fs-2 mb-3"></i>
+                            <h6 class="fw-">Finishing up surgical instrument</h6>
+
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <div class="feature-card h-100 text-start p-4">
+                            <i class="bi bi-shield-check fs-2 mb-3"></i>
+                            <h6 class="fw-">Polishing brushing coating and shining</h6>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="timeline-section py-5">
+                <h2 class="fw-bold text-center text-black mb-5">Instrument Cleaning Process</h2>
+
+                <!-- Horizontal Timeline (Desktop) -->
+                <div class="timeline-horizontal d-none d-md-flex">
+                    <div class="timeline-line"></div>
+
+                    <div class="timeline-step">
                         <div class="icon"><i class="fas fa-tint"></i></div>
-                        <h3>Rinse</h3>
+                        <h5>Rinse</h5>
                         <p>Rinse off all blood, body fluids, and tissue immediately using plain water.</p>
                     </div>
-                </div>
-                <div class="timeline-item right animate">
-                    <div class="content">
+
+                    <div class="timeline-step">
                         <div class="icon"><i class="fas fa-vial"></i></div>
-                        <h3>Mix</h3>
+                        <h5>Mix</h5>
                         <p>Mix a product such as Akazon according to the manufacturer’s directions.</p>
                     </div>
-                </div>
-                <div class="timeline-item left animate">
-                    <div class="content">
+
+                    <div class="timeline-step">
                         <div class="icon"><i class="fas fa-brush"></i></div>
-                        <h3>Clean</h3>
+                        <h5>Clean</h5>
                         <p>Use appropriate brushes and cleaning product to clean surgical instruments.</p>
                     </div>
-                </div>
-                <div class="timeline-item right animate">
-                    <div class="content">
+
+                    <div class="timeline-step">
                         <div class="icon"><i class="fas fa-search"></i></div>
-                        <h3>Inspect</h3>
+                        <h5>Inspect</h5>
                         <p>Visually inspect all instruments to ensure proper function and cleanliness.</p>
                     </div>
-                </div>
-                <div class="timeline-item left animate">
-                    <div class="content">
+
+                    <div class="timeline-step">
                         <div class="icon"><i class="fas fa-water"></i></div>
-                        <h3>Rinse Again</h3>
+                        <h5>Rinse Again</h5>
                         <p>Rinse instruments under clean running water, paying attention to hinges and joints.</p>
                     </div>
-                </div>
-                <div class="timeline-item right animate">
-                    <div class="content">
+
+                    <div class="timeline-step">
                         <div class="icon"><i class="fas fa-toilet-paper"></i></div>
-                        <h3>Dry</h3>
+                        <h5>Dry</h5>
                         <p>Dry instruments thoroughly with a lint-free towel to avoid corrosion or water spots.</p>
                     </div>
                 </div>
-            </div>
-        </section>
+
+                <!-- Vertical Timeline (Mobile) -->
+                <div class="timeline-vertical d-block d-md-none">
+                    <div class="timeline-item">
+                        <div class="icon"><i class="fas fa-tint"></i></div>
+                        <h5>Rinse</h5>
+                        <p>Rinse off all blood, body fluids, and tissue immediately using plain water.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="icon"><i class="fas fa-vial"></i></div>
+                        <h5>Mix</h5>
+                        <p>Mix a product such as Akazon according to the manufacturer’s directions.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="icon"><i class="fas fa-brush"></i></div>
+                        <h5>Clean</h5>
+                        <p>Use appropriate brushes and cleaning product to clean surgical instruments.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="icon"><i class="fas fa-search"></i></div>
+                        <h5>Inspect</h5>
+                        <p>Visually inspect all instruments to ensure proper function and cleanliness.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="icon"><i class="fas fa-water"></i></div>
+                        <h5>Rinse Again</h5>
+                        <p>Rinse instruments under clean running water, paying attention to hinges and joints.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="icon"><i class="fas fa-toilet-paper"></i></div>
+                        <h5>Dry</h5>
+                        <p>Dry instruments thoroughly with a lint-free towel to avoid corrosion or water spots.</p>
+                    </div>
+                </div>
+            </section>
 
 
+            <section id="warranty-warning" class="py-5">
+                <div class="container">
+                    <div class="row g-4">
 
-        <div class="mt-auto">
-            <?php include('footer.php'); ?>
+                        <!-- Warranty Services -->
+                        <div class="col-lg-6 col-md-12">
+                            <div class="custom-card h-100 p-4">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="icon-box warning-box text-white me-3">
+                                        <i class="bi bi-shield-check fs-4"></i>
+                                    </div>
+                                    <h5 class="fw-bold mb-0 ">Warranty Services</h5>
+                                </div>
+                                <p class="small mb-2 text-start">
+                                    We stand by the quality of our instruments. In the unlikely event of defective
+                                    material or poor workmanship,
+                                    we will repair or replace the product.
+                                </p>
+                                <p class="small text-muted mb-0 text-start">
+                                    <strong>Note:</strong> Issues caused by misuse or not following our Instrument Care
+                                    Guide are not covered under warranty.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Warning Notice -->
+                        <div class="col-lg-6 col-md-12">
+                            <div class="custom-card h-100 p-4">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="icon-box importantnotice-box text-white me-3">
+                                        <i class="bi bi-exclamation-triangle fs-4"></i>
+                                    </div>
+                                    <h5 class="fw-bold mb-0">Important Notice</h5>
+                                </div>
+                                <p class="small mb-2 text-start">
+                                    Before sending instruments for repair, they must be thoroughly cleaned and
+                                    sterilized, following the same
+                                    process as if prepared for the operating theatre.
+                                </p>
+
+                                <p class="small mb-2 text-start">Damage due to misuse or ignoring the Instrument Care
+                                    Guide is not covered under
+                                    warranty.</p>
+                                <p class="small mb-2 text-start">After repair, instruments must be treated as new and
+                                    re-sterilized before use.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
         </div>
+    </main>
 
-        <script>
-            const items = document.querySelectorAll('.animate');
-            const observer = new IntersectionObserver(entries => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                    }
-                });
-            }, { threshold: 0.1 });
+    <!-- Footer sticks at the bottom -->
+    <?php include('footer.php'); ?>
 
-            items.forEach(item => {
-                observer.observe(item);
+    <script>
+        const items = document.querySelectorAll('.animate');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
             });
-        </script>
+        }, { threshold: 0.1 });
 
+        items.forEach(item => {
+            observer.observe(item);
+        });
+    </script>
 
 </body>
+
 
 </html>

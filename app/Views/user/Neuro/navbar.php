@@ -65,6 +65,8 @@
                                         <li><a href="<?= site_url('instrumentssets') ?>"
                                                 class="dropdown__link">Instrument
                                                 Sets</a></li>
+                                        <li><a href="<?= site_url('neuro_surgeon') ?>" class="dropdown__link">All</a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>

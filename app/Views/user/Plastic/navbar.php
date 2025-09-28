@@ -57,15 +57,21 @@
                             <div class="dropdown__content">
                                 <ul class="dropdown__menu">
                                     <li><a href="<?= site_url('microscissors') ?>" class="dropdown__link">Micro
-                                            Scissors <br>& Micro Needle Holder</a></li>
+                                            Scissors</a></li>
+                                    <li><a href="<?= site_url('microneedleholder') ?>" class="dropdown__link">Micro
+                                            Needle
+                                            Holder</a></li>
                                     <li><a href="<?= site_url('microforceps') ?>" class="dropdown__link">Micro
                                             Forceps</a></li>
                                     <li><a href="<?= site_url('microvascularclamps') ?>"
                                             class="dropdown__link">Microvascular Clamps</a></li>
+                                    <li><a href="<?= site_url('instrumentssets') ?>" class="dropdown__link">Micro
+                                            Instrument
+                                            Sets</a></li>
+                                    <li><a href="<?= site_url('hookandelevator') ?>" class="dropdown__link">Hook &
+                                            Elevator</a></li>
                                     <li><a href="<?= site_url('tray') ?>" class="dropdown__link">Tray</a>
                                     </li>
-                                    <li><a href="<?= site_url('instrumentssets') ?>" class="dropdown__link">Instrument
-                                            Sets</a></li>
                                 </ul>
                             </div>
                         </div>

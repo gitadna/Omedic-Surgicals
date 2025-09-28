@@ -22,28 +22,70 @@ class HomeController extends BaseController
 
     public function microforceps()
     {
-        return view('user/Plastic/Categories/micro_forceps');
+        return $this->getPlasticProducts('Micro Forceps', 'user/Plastic/Categories/micro_forceps');
+        // return view('user/Plastic/Categories/micro_forceps');
     }
 
     public function microscissors()
     {
-        return view('user/Plastic/Categories/micro_scissors_and_micro_needle_holder');
+        return $this->getPlasticProducts('Micro Scissors', 'user/Plastic/Categories/micro_scissors');
+
+        // return view('user/Plastic/Categories/micro_scissors_and_micro_needle_holder');
+
+    }
+
+    public function microneedleholder()
+    {
+        return $this->getPlasticProducts('Micro Needle Holder', 'user/Plastic/Categories/micro_needle_holder');
+
+        // return view('user/Plastic/Categories/micro_scissors_and_micro_needle_holder');
+
     }
 
     public function microvascularclamps()
     {
+        return $this->getPlasticProducts('Microvascular Clamps', 'user/Plastic/Categories/microvascular_clamps');
         return view('user/Plastic/Categories/microvascular_clamps');
     }
 
 
     public function tray()
     {
-        return view('user/Plastic/Categories/tray');
+        return $this->getPlasticProducts('Tray', 'user/Plastic/Categories/tray');
+        // return view('user/Plastic/Categories/tray');
+    }
+
+    public function hookAndElevator()
+    {
+        return $this->getPlasticProducts('Hook & Elevator', 'user/Plastic/Categories/hook_and_elevator');
+        // return view('user/Plastic/Categories/tray');
     }
 
     public function instrumentssets()
     {
-        return view('user/Plastic/Categories/instrument_sets');
+        return $this->getPlasticProducts('Micro Instrument Sets', 'user/Plastic/Categories/micro_instrument_sets');
+        // return view('user/Plastic/Categories/instrument_sets');
+
+    }
+
+    private function getPlasticProducts($subcategory, $view)
+    {
+        $db = \Config\Database::connect();
+        $builder = $db->table('products');
+        $builder->where('category', 'Plastic');
+        $builder->where('subcategory', $subcategory);
+        $query = $builder->get();
+        $products = $query->getResultArray();
+
+        foreach ($products as &$product) {
+            $attrQuery = $db->table('product_attributes')
+                ->where('product_id', $product['id'])
+                ->get();
+            $product['attributes'] = $attrQuery->getResultArray();
+        }
+
+        $data['products'] = $products;
+        return view($view, $data);
     }
 
     public function plastic_surgeon()

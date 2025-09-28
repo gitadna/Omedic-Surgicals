@@ -105,7 +105,7 @@
     <script>
 
         const subcategoryOptions = {
-            Plastic: ['Micro Scissors Micro Needle Holder', 'Micro Forceps', 'Microvascular Clamps', 'Tray', 'Instrument Sets'],
+            Plastic: ['Micro Scissors', 'Micro Needle Holder', 'Micro Forceps', 'Microvascular Clamps', 'Micro Instrument Sets', 'Hook & Elevator', 'Tray'],
             Neuro: ['Micro Scissors', 'Cranial', 'Dural Hooks']
         };
 

@@ -20,7 +20,7 @@
     <div class="container-heading sp-page-wrapper">
         <div class="text-center mb-5 intro-section">
             <h3 class="gradient-text fw-bold display-4 mb-3">
-                Plastic Surgery Instruments
+                Neuro Surgery Instruments
             </h3>
             <div class="underline"></div>
             <p class="intro-text mx-auto mt-4 px-3 px-md-5">
