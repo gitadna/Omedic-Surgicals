@@ -27,9 +27,9 @@ class Database extends Config
     public $default = [
         'DSN' => '',
         'hostname' => 'localhost',
-        'username' => 'root',
+        'username' => 'u676665022_root',
         'password' => '',
-        'database' => 'Omedic_Surgicals',
+        'database' => 'u676665022_omedicsurgical',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,

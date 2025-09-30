@@ -51,72 +51,6 @@
 <body>
     <?php include('navbar.php'); ?>
 
-    <!-- Hero: left text + right carousel -->
-    <!-- <section class="hero container">
-        <div class="row align-items-center g-4">
-            <div class="col-lg-6 order-2 order-lg-1">
-                <h1 class="headline display-5 mb-3 animate__animated animate__fadeInUp">
-                    Precision Instruments for Transformative Plastic Surgery
-                </h1>
-                <p class="subheadline mb-4">
-                    Delivering the accuracy, comfort, and durability surgeons demand in the operating
-                    room.
-                </p>
-                <div class="row justify-content-left">
-                    <div class="col-auto">
-                        <a href="#instruments"
-                            class="btn btn-primary animate__animated animate__fadeInUp animate__delay-1s">
-                            Explore Products
-                        </a>
-                    </div>
-                    <div class="col-auto">
-                        <a href="#contact"
-                            class="btn btn-primary animate__animated animate__fadeInUp animate__delay-1s">
-                            Request a Quote
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="col-lg-6 order-1 order-lg-2">
-                <div id="heroCarousel" class="carousel slide hero-carousel" data-bs-ride="carousel"
-                    data-bs-interval="2800">
-                    <div class="carousel-indicators custom-indicators">
-                        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"
-                            aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="assets/plastic_home_slider/slide1.png" alt="Microsurgical forceps" />
-                        </div>
-                        <div class="carousel-item">
-                            <img src="assets/plastic_home_slider/slide2.png"
-                                alt="Delicate scissors for plastic surgery" />
-                        </div>
-                        <div class="carousel-item">
-                            <img src="assets/plastic_home_slider/slide3.png" alt="Retractors and fine tips" />
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span><span
-                            class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span><span
-                            class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
     <section class="hero container-fluid position-relative p-0">
         <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2800">
             <div class="carousel-inner">
@@ -133,8 +67,6 @@
                         alt="Retractors and fine tips" />
                 </div>
             </div>
-
-            <!-- Desktop Overlay Content -->
             <div
                 class="carousel-caption start-0 top-50 translate-middle-y text-start text-white ps-5 d-none d-md-block">
                 <h1 class="display-5 animate__animated animate__fadeInLeft">
@@ -146,7 +78,7 @@
                 <div class="d-flex gap-3">
                     <a href="#instruments"
                         class="btn btn-primary animate__animated animate__fadeInLeft animate__delay-2s explore-button">
-                        Explore Products
+                        Customize Instrument
                     </a>
                     <a href="<?= site_url('contactus') ?>"
                         class="btn btn-primary animate__animated animate__fadeInLeft animate__delay-2s explore-button">
@@ -165,7 +97,9 @@
                 Delivering the accuracy, comfort, and durability surgeons demand in the operating room.
             </p>
             <div class="d-flex flex-column gap-2">
-                <a href="#instruments" class="btn btn-primary explore-button">Explore Products</a>
+                <a class="btn btn-primary explore-button" data-bs-toggle="modal" data-bs-target="#customizeModal">
+                    Customize Instrument
+                </a>
                 <a href="<?= site_url('contactus') ?>" class="btn btn-primary explore-button">Request a Quote</a>
             </div>
         </div>
@@ -175,7 +109,7 @@
     <!-- Soft-toned banner: headline, subheadline, CTAs -->
     <section class="container py-5">
         <div class="text-center mb-4">
-            <h2 class="section-title">Why Choose us for Plastic Surgery</h2>
+            <h2 class="section-title">Why Choose us</h2>
             <p class="section-subtitle">
                 At Omedic Surgicals, we turn precision into perfection. Our micro instruments are
                 designed for professionals who demand accuracy, reliability, and performance—every single time.
@@ -217,7 +151,7 @@
 
 
     <!-- Instruments Preview: 5 key cards -->
-    <section id="instruments" class="container py-5">
+    <section id="instruments" class="container">
         <div class="text-center mb-4">
             <h2 class="section-title">Plastic Surgery Instrument Categories</h2>
             <p class="section-subtitle">
@@ -298,10 +232,6 @@
         </div>
     </section>
 
-    <!-- Why Choose Us: Plastic Focus -->
-
-
-    <!-- Client Trust Strip / Highlight -->
 
 
     <!-- Testimonials Section -->
@@ -352,6 +282,35 @@
             </div>
         </div>
     </section>
+
+
+    <div class="modal fade" id="customizeModal" tabindex="-1" aria-labelledby="customizeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h5 class="modal-title" id="customizeModalLabel">Customize Instrument Sets</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <!-- Modal Body -->
+                <div class="modal-body">
+                    Don’t settle for pre-made—create a micro instrument set that’s truly yours.
+                    Pick your own scissors, forceps, and other instruments exactly as you need.
+                    Customized, precise, and designed for <b>your workflow</b>.
+                </div>
+
+                <!-- Modal Footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="#instruments" class="btn btn-primary">Start Customizing</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
 
 
     <?php include('footer.php'); ?>

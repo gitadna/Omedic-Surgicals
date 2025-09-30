@@ -117,7 +117,7 @@
             <div class="row align-items-center">
                 <!-- Left Side: Text -->
                 <div class="col-md-8 text-start">
-                    <h3 class="gradient-text fw-bold display-4 mb-3">Micro Instrument Sets</h3>
+                    <h3 class="gradient-text fw-bold display-4 mb-3">Tray</h3>
                     <div class="underline"></div>
                     <p class="intro-text mt-3">
                         Explore our curated range of high-quality trays designed for precision, safety,

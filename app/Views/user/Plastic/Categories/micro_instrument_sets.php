@@ -306,6 +306,11 @@
                 <div class="ux-modal-header">
                     <h5 class="ux-modal-title" id="uxDetailsLabel">Instrument Set Details</h5>
                 </div>
+                <div class="ux-modal-header h-400">
+                    <img src="assets/micro_instruments_sets/micro_instrument_set_3.jpg" class="ux-card-img"
+                        alt="Micro Box" onclick="openModal(this.src)">
+                </div>
+
                 <div class="ux-modal-body">
                     <div class="table-responsive">
                         <table class="table ux-table">

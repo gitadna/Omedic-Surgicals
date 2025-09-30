@@ -133,6 +133,28 @@
         .importantnotice-box {
             background: #FE5757;
         }
+
+        .repair-section h2 {
+            color: #1e3a8a;
+        }
+
+        .icon-pointer {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #60a5fa, #2563eb);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            flex-shrink: 0;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+        }
+
+        .repair-section ul li h6 {
+            color: #0d6efd;
+        }
     </style>
 
 
@@ -194,6 +216,70 @@
                             <h6 class="fw-">Polishing brushing coating and shining</h6>
 
                         </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Repair Services Section -->
+            <section class="repair-section py-5">
+                <div class="container">
+                    <div class="row align-items-center g-5">
+                        <div class="col-lg-6 text-center">
+                            <img src="assets/repair.png" alt="Instrument Repair"
+                                class="img-fluid rounded-3 shadow-sm" />
+                        </div>
+                        <!-- Left Content -->
+                        <div class="col-lg-6">
+                            <h2 class="fw-bold text-black mb-3">We Repair Your Micro Instruments Like New</h2>
+                            <p class="text-muted mb-4">
+                                Why replace when you can restore? At <strong>Omedic Surgicals</strong>, we specialize in
+                                repairing your delicate micro instruments with precision and care—bringing them back to
+                                their original performance and look.
+                            </p>
+
+                            <ul class="list-unstyled">
+                                <li class="d-flex mb-3">
+                                    <span class="icon-pointer me-3"><i class="bi bi-check-circle-fill"></i></span>
+                                    <div>
+                                        <h6 class="fw-bold mb-1">High-Quality Repairs</h6>
+                                        <p class="mb-0 small text-muted">Restoring instruments to “as good as new”
+                                            condition.</p>
+                                    </div>
+                                </li>
+                                <li class="d-flex mb-3">
+                                    <span class="icon-pointer me-3"><i class="bi bi-currency-dollar"></i></span>
+                                    <div>
+                                        <h6 class="fw-bold mb-1">Cost-Effective Solution</h6>
+                                        <p class="mb-0 small text-muted">Save more by repairing instead of replacing.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="d-flex mb-3">
+                                    <span class="icon-pointer me-3"><i class="bi bi-bullseye"></i></span>
+                                    <div>
+                                        <h6 class="fw-bold mb-1">Precision & Reliability</h6>
+                                        <p class="mb-0 small text-muted">Every instrument is tested for accuracy and
+                                            durability.</p>
+                                    </div>
+                                </li>
+                                <li class="d-flex">
+                                    <span class="icon-pointer me-3"><i class="bi bi-recycle"></i></span>
+                                    <div>
+                                        <h6 class="fw-bold mb-1">Sustainability</h6>
+                                        <p class="mb-0 small text-muted">Extending the life of your instruments reduces
+                                            waste.</p>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <p class="mt-4 fw-semibold text-primary">
+                                Where old instruments find new life.
+                                Because every instrument deserves a second life.</p>
+                        </div>
+
+                        <!-- Right Illustration / Image -->
+
                     </div>
                 </div>
             </section>
