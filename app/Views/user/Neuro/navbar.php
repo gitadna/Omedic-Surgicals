@@ -22,7 +22,7 @@
                 <!-- For small screens: Logo + Call Us -->
                 <div class="nav__mobile-group">
                     <a href="<?= site_url('/') ?>" class="nav__logo">
-                        <img src="assets/omedic_surgical_logo.png" alt="Company Logo" class="nav_logo"
+                        <img src="<?= ASSET_URL . 'omedic_surgical_logo.png' ?>" alt="Company Logo" class="nav_logo"
                             style="object-fit: contain; max-width: 100px;max-height: 70px">
                     </a>
 
