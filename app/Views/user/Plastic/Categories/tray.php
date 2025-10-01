@@ -136,7 +136,7 @@
                     <div class="glass-card p-3 h-100 d-flex flex-column justify-content-between">
                         <div>
                             <div class="glass-img-wrapper mb-3 text-center">
-                                <img src="<?= MICRO_ASSET_URL . 'micro_instrument_box.png' ?>"
+                                <img src="<?= MICRO_ASSET_URL . 'micro_instrument_box.jpg' ?>"
                                     class="img-fluid product-img mx-auto d-block" alt="Micro Scissor"
                                     style="max-height: 300px; width: 100%; object-fit: cover;">
                             </div>
