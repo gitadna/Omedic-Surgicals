@@ -104,7 +104,7 @@
             <div class="row align-items-center min-vh-100">
 
                 <div class="col-md-6 d-none d-md-block text-center">
-                    <img src="assets/omedic_surgical_logo.png" alt="Company Logo" class="img-fluid"
+                    <img src="<?= ASSET_URL . 'omedic_surgical_logo.png' ?>" alt="Company Logo" class="img-fluid"
                         style="width: 350px;">
                 </div>
 
