@@ -3,7 +3,7 @@
     <nav class="nav container_navbar">
         <div class="nav__data">
             <a href="<?= site_url('/') ?>" class="nav__logo">
-                <img src="assets/omedic_surgical_logo.png" alt="Company Logo" class="nav_logo"
+                <img src="<?= ASSET_URL . 'omedic_surgicals_logo.png' ?>" alt="Company Logo" class="nav_logo"
                     style="object-fit: contain; max-width: 100px;max-height: 70px">
             </a>
 
