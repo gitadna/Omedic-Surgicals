@@ -136,7 +136,7 @@
                     <div class="glass-card p-3 h-100 d-flex flex-column justify-content-between">
                         <div>
                             <div class="glass-img-wrapper mb-3 text-center">
-                                <img src="assets/micro_instruments_sets/micro_instrument_box.jpg"
+                                <img src="<?= MICRO_ASSET_URL . 'micro_instrument_box.png' ?>"
                                     class="img-fluid product-img mx-auto d-block" alt="Micro Scissor"
                                     style="max-height: 300px; width: 100%; object-fit: cover;">
                             </div>
@@ -153,7 +153,7 @@
                     <div class="glass-card p-3 h-100 d-flex flex-column justify-content-between">
                         <div>
                             <div class="glass-img-wrapper mb-3 text-center">
-                                <img src="assets/micro_instruments_sets/skin_grafting_box.jpg"
+                                <img src="<?= MICRO_ASSET_URL . 'skin_grafting_box.jpg' ?>"
                                     class="img-fluid product-img mx-auto d-block" alt="Needle Holder"
                                     style="max-height: 300px; width: 100%; object-fit: cover;">
                             </div>
@@ -170,7 +170,7 @@
                     <div class="glass-card p-3 h-100 d-flex flex-column justify-content-between">
                         <div>
                             <div class="glass-img-wrapper mb-3 text-center">
-                                <img src="assets/micro_instruments_sets/double_layer_box.jpg"
+                                <img src="<?= MICRO_ASSET_URL . 'double_layer_box.jpg' ?>"
                                     class="img-fluid product-img mx-auto d-block" alt="Tissue Forceps"
                                     style="max-height: 350px; width: 100%; object-fit: cover;">
                             </div>

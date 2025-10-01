@@ -367,7 +367,7 @@
                             <div class="custom-card h-100 p-4">
                                 <div class="d-flex align-items-center mb-3">
                                     <div class="icon-box warning-box text-white me-3">
-                                        <i class="bi bi-shield-check fs-4"></i>
+                                        <i class="fa fa-exclamation-triangle" fs-4"></i>
                                     </div>
                                     <h5 class="fw-bold mb-0 ">Warranty Services</h5>
                                 </div>
@@ -388,7 +388,7 @@
                             <div class="custom-card h-100 p-4">
                                 <div class="d-flex align-items-center mb-3">
                                     <div class="icon-box importantnotice-box text-white me-3">
-                                        <i class="bi bi-exclamation-triangle fs-4"></i>
+                                        <i class="fa fa-exclamation-triangle fs-4"></i>
                                     </div>
                                     <h5 class="fw-bold mb-0">Important Notice</h5>
                                 </div>
