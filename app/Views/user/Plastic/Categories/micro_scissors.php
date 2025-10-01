@@ -32,7 +32,7 @@
                                     <!-- Image with hover zoom and click-to-expand -->
                                     <div class="glass-img-wrapper mb-3 text-center"
                                         onclick="openModal('<?= base_url('uploads/' . $product['image']) ?>')">
-                                        <img src="<?= base_url('uploads/' . $product['image']) ?>"
+                                        <img src="<?= UPLOAD_URL . $product['image'] ?>"
                                             class="img-fluid product-img mx-auto d-block" alt="<?= esc($product['name']) ?>"
                                             style="max-height: 300px; width: 100%; object-fit: cover;">
                                     </div>
