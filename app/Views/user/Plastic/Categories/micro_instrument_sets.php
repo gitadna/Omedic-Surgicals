@@ -237,7 +237,7 @@
                 <!-- Card One -->
                 <div class="col">
                     <div class="ux-card text-center">
-                        <img src="assets/micro_instruments_sets/micro_instrument_set_2.jpg" class="ux-card-img"
+                        <img src="<?= MICRO_ASSET_URL . 'micro_instrument_set_2.jpg' ?>" class="ux-card-img"
                             alt="Micro Box" onclick="openModal(this.src)">
 
                         <h5 class="ux-card-title">Micro Instrument Set 2</h5>
@@ -251,7 +251,7 @@
 
                 <div class="col">
                     <div class="ux-card text-center">
-                        <img src="assets/micro_instruments_sets/super_micro_instrument_set.jpg" class="ux-card-img"
+                        <img src="<?= MICRO_ASSET_URL . 'super_micro_instrument_set.jpg' ?>" class="ux-card-img"
                             alt="Micro Box" onclick="openModal(this.src)">
 
                         <h5 class="ux-card-title">Super Micro Instrument Set</h5>
@@ -267,7 +267,7 @@
 
                 <div class="col">
                     <div class="ux-card text-center">
-                        <img src="assets/micro_instruments_sets/micro_instrument_set_3.jpg" class="ux-card-img"
+                        <img src="<?= MICRO_ASSET_URL . 'micro_instrument_set_3.jpg' ?>" class="ux-card-img"
                             alt="Micro Box" onclick="openModal(this.src)">
 
                         <h5 class="ux-card-title">Micro Instrument Set 3</h5>
