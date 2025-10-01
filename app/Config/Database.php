@@ -28,7 +28,7 @@ class Database extends Config
         'DSN' => '',
         'hostname' => 'localhost',
         'username' => 'u676665022_root',
-        'password' => '',
+        'password' => '$ArMgV0Y@m',
         'database' => 'u676665022_omedicsurgical',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
