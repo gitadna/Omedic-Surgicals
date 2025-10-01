@@ -29,7 +29,7 @@
                             <div class="glass-card p-3 h-100 d-flex flex-column justify-content-between">
                                 <div>
                                     <div class="glass-img-wrapper mb-3 text-center" onmousemove="zoomImage(event, this)">
-                                        <img src="<?= base_url('uploads/' . $product['image']) ?>"
+                                        <img src="<?= UPLOAD_URL . $product['image'] ?>"
                                             class="img-fluid product-img mx-auto d-block" alt="<?= esc($product['name']) ?>"
                                             style="max-height: 300px; max-width: 100%; width: 100%; object-fit: cover;">
                                     </div>

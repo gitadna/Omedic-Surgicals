@@ -109,7 +109,7 @@
                             <td rowspan="<?= $rowspan ?>"><?= htmlspecialchars($product['category']) ?></td>
                             <td rowspan="<?= $rowspan ?>"><?= htmlspecialchars($product['subcategory']) ?></td>
                             <td rowspan="<?= $rowspan ?>">
-                                <img src="<?= base_url('uploads/' . $product['image']) ?>" class="img-thumbnail" width="70">
+                                <img src="<?= UPLOAD_URL . $product['image'] ?>" class="img-thumbnail" width="70">
                             </td>
 
                             <?php if (!empty($product['attributes'])): ?>

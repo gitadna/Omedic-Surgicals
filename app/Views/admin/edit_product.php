@@ -107,8 +107,7 @@
                 <div class="mb-3">
                     <label for="image" class="form-label">Product Image</label>
                     <input type="file" class="form-control" id="image" name="image">
-                    <img src="<?= base_url('uploads/' . $product['image']) ?>" alt="Product Image"
-                        class="preview-img mt-2">
+                    <img src="<?= UPLOAD_URL . $product['image'] ?>" alt="Product Image" class="preview-img mt-2">
                 </div>
 
                 <!-- Dynamic Attribute Fields -->
