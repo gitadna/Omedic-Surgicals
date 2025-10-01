@@ -80,9 +80,9 @@ defined('EXIT__AUTO_MIN') || define('EXIT__AUTO_MIN', 9);      // lowest automat
 defined('EXIT__AUTO_MAX') || define('EXIT__AUTO_MAX', 125);    // highest automatically-assigned error code
 defined('APP_BASE_URL') || define('APP_BASE_URL', $appUrl);   // highest automatically-assigned error code
 defined('PUBLIC_URL') || define('PUBLIC_URL', APP_BASE_URL . 'public');   // highest automatically-assigned error code
-defined('ASSET_URL') || define('ASSET_URL', PUBLIC_URL . '/assets/');   // highest automatically-assigned error code
+defined('ASSET_URL') || define('ASSET_URL', PUBLIC_URL . '/assets');   // highest automatically-assigned error code
 defined('JS_ASSET_URL') || define('JS_ASSET_URL', ASSET_URL . '/js/');   // highest automatically-assigned error code
 defined('CSS_ASSET_URL') || define('CSS_ASSET_URL', ASSET_URL . '/css/');   // highest automatically-assigned error code
-defined('MICRO_ASSET_URL') || define('MICRO_ASSET_URL', ASSET_URL . 'micro_instruments_sets/');   // highest automatically-assigned error code
-defined('PLASTIC_ASSET_URL') || define('PLASTIC_ASSET_URL', ASSET_URL . 'plastic_home_slider');   // highest automatically-assigned error code
-defined('UPLOAD_URL') || define('UPLOAD_URL', PUBLIC_URL . 'uploads/');   // highest automatically-assigned error code
+defined('MICRO_ASSET_URL') || define('MICRO_ASSET_URL', ASSET_URL . '/micro_instruments_sets/');   // highest automatically-assigned error code
+defined('PLASTIC_ASSET_URL') || define('PLASTIC_ASSET_URL', ASSET_URL . '/plastic_home_slider');   // highest automatically-assigned error code
+defined('UPLOAD_URL') || define('UPLOAD_URL', PUBLIC_URL . '/uploads/');   // highest automatically-assigned error code
