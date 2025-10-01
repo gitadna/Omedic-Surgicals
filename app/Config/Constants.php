@@ -13,6 +13,7 @@
  | NOTE: changing this will require manually modifying the
  | existing namespaces of App\* namespaced-classes.
  */
+$appUrl = getenv('app.baseURL') ?? 'http://localhost:8080/';
 defined('APP_NAMESPACE') || define('APP_NAMESPACE', 'App');
 
 /*
@@ -35,11 +36,11 @@ defined('COMPOSER_PATH') || define('COMPOSER_PATH', ROOTPATH . 'vendor/autoload.
  */
 defined('SECOND') || define('SECOND', 1);
 defined('MINUTE') || define('MINUTE', 60);
-defined('HOUR')   || define('HOUR', 3600);
-defined('DAY')    || define('DAY', 86400);
-defined('WEEK')   || define('WEEK', 604800);
-defined('MONTH')  || define('MONTH', 2_592_000);
-defined('YEAR')   || define('YEAR', 31_536_000);
+defined('HOUR') || define('HOUR', 3600);
+defined('DAY') || define('DAY', 86400);
+defined('WEEK') || define('WEEK', 604800);
+defined('MONTH') || define('MONTH', 2_592_000);
+defined('YEAR') || define('YEAR', 31_536_000);
 defined('DECADE') || define('DECADE', 315_360_000);
 
 /*
@@ -67,13 +68,21 @@ defined('DECADE') || define('DECADE', 315_360_000);
  |       http://tldp.org/LDP/abs/html/exitcodes.html
  |
  */
-defined('EXIT_SUCCESS')        || define('EXIT_SUCCESS', 0);        // no errors
-defined('EXIT_ERROR')          || define('EXIT_ERROR', 1);          // generic error
-defined('EXIT_CONFIG')         || define('EXIT_CONFIG', 3);         // configuration error
-defined('EXIT_UNKNOWN_FILE')   || define('EXIT_UNKNOWN_FILE', 4);   // file not found
-defined('EXIT_UNKNOWN_CLASS')  || define('EXIT_UNKNOWN_CLASS', 5);  // unknown class
+defined('EXIT_SUCCESS') || define('EXIT_SUCCESS', 0);        // no errors
+defined('EXIT_ERROR') || define('EXIT_ERROR', 1);          // generic error
+defined('EXIT_CONFIG') || define('EXIT_CONFIG', 3);         // configuration error
+defined('EXIT_UNKNOWN_FILE') || define('EXIT_UNKNOWN_FILE', 4);   // file not found
+defined('EXIT_UNKNOWN_CLASS') || define('EXIT_UNKNOWN_CLASS', 5);  // unknown class
 defined('EXIT_UNKNOWN_METHOD') || define('EXIT_UNKNOWN_METHOD', 6); // unknown class member
-defined('EXIT_USER_INPUT')     || define('EXIT_USER_INPUT', 7);     // invalid user input
-defined('EXIT_DATABASE')       || define('EXIT_DATABASE', 8);       // database error
-defined('EXIT__AUTO_MIN')      || define('EXIT__AUTO_MIN', 9);      // lowest automatically-assigned error code
-defined('EXIT__AUTO_MAX')      || define('EXIT__AUTO_MAX', 125);    // highest automatically-assigned error code
+defined('EXIT_USER_INPUT') || define('EXIT_USER_INPUT', 7);     // invalid user input
+defined('EXIT_DATABASE') || define('EXIT_DATABASE', 8);       // database error
+defined('EXIT__AUTO_MIN') || define('EXIT__AUTO_MIN', 9);      // lowest automatically-assigned error code
+defined('EXIT__AUTO_MAX') || define('EXIT__AUTO_MAX', 125);    // highest automatically-assigned error code
+defined('APP_BASE_URL') || define('APP_BASE_URL', $appUrl);   // highest automatically-assigned error code
+defined('PUBLIC_URL') || define('PUBLIC_URL', APP_BASE_URL . 'public');   // highest automatically-assigned error code
+defined('ASSET_URL') || define('ASSET_URL', PUBLIC_URL . '/assets');   // highest automatically-assigned error code
+defined('JS_ASSET_URL') || define('JS_ASSET_URL', ASSET_URL . '/js');   // highest automatically-assigned error code
+defined('CSS_ASSET_URL') || define('CSS_ASSET_URL', ASSET_URL . '/css/');   // highest automatically-assigned error code
+defined('MICRO_ASSET_URL') || define('MICRO_ASSET_URL', ASSET_URL . '/micro_instruments_sets');   // highest automatically-assigned error code
+defined('PLASTIC_ASSET_URL') || define('PLASTIC_ASSET_URL', ASSET_URL . '/plastic_home_slider');   // highest automatically-assigned error code
+defined('UPLOAD_URL') || define('UPLOAD_URL', PUBLIC_URL . '/uploads');   // highest automatically-assigned error code

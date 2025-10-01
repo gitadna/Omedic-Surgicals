@@ -2,14 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--=============== REMIXICONS ===============-->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="../../assets/css/navbar.css">
+    <?php include(APPPATH . 'Views/user/head.php'); ?>
 
     <title>Responsive navigation bar - Bedimcode</title>
 </head>
@@ -50,7 +43,7 @@
 
                     <li class="dropdown__item">
                         <div class="nav__link dropdown__button">
-                            Products <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            Products <i class="fa fa-caret-down"></i>
                         </div>
 
                         <div class="dropdown__container">
@@ -104,10 +97,10 @@
     </header>
 
     <a href="tel:+7574022543" class="floating-call-btn" title="Call Us">
-        <i class="ri-phone-line"></i>
+        <i class="fab fa-whatsapp"></i>
     </a>
     <a href="https://wa.me/7574022543" class="floating-call-btn-whatsapp" title="Call Us">
-        <i class="ri-whatsapp-line"></i>
+        <i class="fab fa-whatsapp"></i>
     </a>
 
 

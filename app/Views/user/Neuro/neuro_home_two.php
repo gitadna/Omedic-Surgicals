@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <!-- Your site styles (optional) -->
-    <!-- <link rel="stylesheet" href="assets/css/main.css"> -->
-    <link rel="stylesheet" href="assets/css/home.css">
-    <link rel="stylesheet" href="assets/css/footer.css">
+    <!-- <link rel="stylesheet" href="<?= CSS_ASSET_URL . "main.css" ?>"> -->
+    <link rel="stylesheet" href="<?= CSS_ASSET_URL . "home.css" ?>">
+    <link rel="stylesheet" href="<?= CSS_ASSET_URL . "footer.css" ?>">
 
 
 
