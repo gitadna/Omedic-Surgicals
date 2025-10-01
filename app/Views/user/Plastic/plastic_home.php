@@ -150,7 +150,7 @@
         <div class="row g-4">
             <div class="col-6 col-sm-6 col-lg-4 ">
                 <div class="instrument-card">
-                    <img src="assets/home_background.jpg" alt="Microsurgical Forceps">
+                    <img src="<?= ASSET_URL . 'home_background.jpg' ?>" alt="Microsurgical Forceps">
                     <div class="p-3">
                         <h5 class="mb-2">Micro Scissors</h5>
                         <p class="text-muted mb-3">Ultra‑fine tips for delicate tissue handling and micro suturing.</p>
@@ -161,7 +161,7 @@
 
             <div class="col-6 col-sm-6 col-lg-4">
                 <div class="instrument-card">
-                    <img src="assets/home_background.jpg" alt="Delicate Scissors">
+                    <img src="<?= ASSET_URL . 'home_background.jpg' ?>" alt="Delicate Scissors">
                     <div class="p-3">
                         <h5 class="mb-2">Micro Needle Holder</h5>
                         <p class="text-muted mb-3">Precision cutting with minimal tissue trauma.</p>
@@ -173,7 +173,7 @@
 
             <div class="col-6 col-sm-6 col-lg-4">
                 <div class="instrument-card">
-                    <img src="assets/home_background.jpg" alt="Retractors">
+                    <img src="<?= ASSET_URL . 'home_background.jpg' ?>" alt="Retractors">
                     <div class="p-3">
                         <h5 class="mb-2">Micro Forceps</h5>
                         <p class="text-muted mb-3">Controlled exposure with lightweight, ergonomic designs.</p>
@@ -184,7 +184,7 @@
 
             <div class="col-6 col-sm-6 col-lg-4">
                 <div class="instrument-card">
-                    <img src="assets/home_background.jpg" alt="Retractors">
+                    <img src="<?= ASSET_URL . 'home_background.jpg' ?>" alt="Retractors">
                     <div class="p-3">
                         <h5 class="mb-2">Micro Vascular Clamps</h5>
                         <p class="text-muted mb-3">Controlled exposure with lightweight, ergonomic designs.</p>
@@ -196,7 +196,7 @@
 
             <div class="col-6 col-sm-6 col-lg-4">
                 <div class="instrument-card">
-                    <img src="assets/home_background.jpg" alt="Needle Holders">
+                    <img src="<?= ASSET_URL . 'home_background.jpg' ?>" alt="Needle Holders">
                     <div class="p-3">
                         <h5 class="mb-2">Micro Instrument sets</h5>
                         <p class="text-muted mb-3">Stable grip and control for micro and fine suturing.</p>
@@ -207,7 +207,7 @@
 
             <div class="col-6 col-sm-6 col-lg-4">
                 <div class="instrument-card">
-                    <img src="assets/home_background.jpg" alt="Skin Hooks">
+                    <img src="<?= ASSET_URL . 'home_background.jpg' ?>" alt="Skin Hooks">
                     <div class="p-3">
                         <h5 class="mb-2">Tray</h5>
                         <p class="text-muted mb-3">Fine hooks for precise skin elevation and handling.</p>
