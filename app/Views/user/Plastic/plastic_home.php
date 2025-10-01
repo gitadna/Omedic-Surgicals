@@ -43,15 +43,15 @@
         <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2800">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="assets/plastic_home_slider/slide1.png" class="d-block w-100"
+                    <img src="<?= PLASTIC_ASSET_URL . 'slide1.png' ?>" class="d-block w-100"
                         alt="Microsurgical forceps" />
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/plastic_home_slider/slide2.png" class="d-block w-100"
+                    <img src="<?= PLASTIC_ASSET_URL . 'slide2.png' ?>" class="d-block w-100"
                         alt="Delicate scissors for plastic surgery" />
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/plastic_home_slider/slide3.png" class="d-block w-100"
+                    <img src="<?= PLASTIC_ASSET_URL . 'slide3.png' ?>" class="d-block w-100"
                         alt="Retractors and fine tips" />
                 </div>
             </div>
