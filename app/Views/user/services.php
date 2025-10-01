@@ -214,7 +214,7 @@
                 <div class="container">
                     <div class="row align-items-center g-5">
                         <div class="col-lg-6 text-center">
-                            <img src="assets/repair.png" alt="Instrument Repair"
+                            <img src="<?= ASSET_URL . 'repair.png' ?>" alt="Instrument Repair"
                                 class="img-fluid rounded-3 shadow-sm" />
                         </div>
                         <!-- Left Content -->
