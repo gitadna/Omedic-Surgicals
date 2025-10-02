@@ -154,6 +154,12 @@
 
     <!-- Main content wrapper -->
     <main class="flex-grow-1">
+        <div class="text-center mb-5 intro-section">
+            <h3 class="gradient-text fw-bold display-4 mt-3 mb-3">
+                Services
+            </h3>
+            
+        </div>
         <div class="container-heading sp-page-wrapper mb-5">
             <section class="container py-5">
                 <!-- Row 1: Heading + 2 Cards -->
@@ -168,13 +174,13 @@
                         <div class="row g-4">
                             <div class="col-6 col-md-6">
                                 <div class="feature-card h-100 text-start p-4">
-                                    <i class="bi bi-phone-vibrate fs-2 mb-3"></i>
+                                    <i class="fa fa-phone-square fs-2 mb-3"></i>
                                     <h6 class="fw-400">Design and manufacturer surgical instrument</h6>
                                 </div>
                             </div>
                             <div class="col-6 col-md-6">
                                 <div class="feature-card h-100 text-start p-4">
-                                    <i class="bi bi-heart-pulse fs-2 mb-3"></i>
+                                    <i class="fa fa-heart fs-2 mb-3"></i>
                                     <h6 class="fw-400">Machining of raw parts</h6>
                                 </div>
                             </div>
@@ -186,21 +192,21 @@
                 <div class="row g-4">
                     <div class="col-6 col-md-4">
                         <div class="feature-card h-100 text-start p-4">
-                            <i class="bi bi-people fs-2 mb-3"></i>
+                            <i class="fa fa-users fs-2 mb-3"></i>
                             <h6 class="fw-">Assembly of surgical instruments</h6>
 
                         </div>
                     </div>
                     <div class="col-6 col-md-4">
                         <div class="feature-card h-100 text-start p-4">
-                            <i class="bi bi-activity fs-2 mb-3"></i>
+                            <i class="fa fa-list-alt fs-2 mb-3"></i>
                             <h6 class="fw-">Finishing up surgical instrument</h6>
 
                         </div>
                     </div>
                     <div class="col-6 col-md-4">
                         <div class="feature-card h-100 text-start p-4">
-                            <i class="bi bi-shield-check fs-2 mb-3"></i>
+                            <i class="fa fa-shield fs-2 mb-3"></i>
                             <h6 class="fw-">Polishing brushing coating and shining</h6>
 
                         </div>
@@ -228,7 +234,7 @@
 
                             <ul class="list-unstyled">
                                 <li class="d-flex mb-3">
-                                    <span class="icon-pointer me-3"><i class="bi bi-check-circle-fill"></i></span>
+                                    <span class="icon-pointer me-3"><i class="fa fa-check-circle"></i></span>
                                     <div>
                                         <h6 class="fw-bold mb-1">High-Quality Repairs</h6>
                                         <p class="mb-0 small text-muted">Restoring instruments to “as good as new”
@@ -236,7 +242,7 @@
                                     </div>
                                 </li>
                                 <li class="d-flex mb-3">
-                                    <span class="icon-pointer me-3"><i class="bi bi-currency-dollar"></i></span>
+                                    <span class="icon-pointer me-3"><i class="fa fa-usd"></i></span>
                                     <div>
                                         <h6 class="fw-bold mb-1">Cost-Effective Solution</h6>
                                         <p class="mb-0 small text-muted">Save more by repairing instead of replacing.
@@ -244,7 +250,7 @@
                                     </div>
                                 </li>
                                 <li class="d-flex mb-3">
-                                    <span class="icon-pointer me-3"><i class="bi bi-bullseye"></i></span>
+                                    <span class="icon-pointer me-3"><i class="fa fa-bullseye"></i></span>
                                     <div>
                                         <h6 class="fw-bold mb-1">Precision & Reliability</h6>
                                         <p class="mb-0 small text-muted">Every instrument is tested for accuracy and
@@ -252,7 +258,7 @@
                                     </div>
                                 </li>
                                 <li class="d-flex">
-                                    <span class="icon-pointer me-3"><i class="bi bi-recycle"></i></span>
+                                    <span class="icon-pointer me-3"><i class="fa fa-recycle"></i></span>
                                     <div>
                                         <h6 class="fw-bold mb-1">Sustainability</h6>
                                         <p class="mb-0 small text-muted">Extending the life of your instruments reduces
@@ -262,7 +268,7 @@
                             </ul>
 
                             <p class="mt-4 fw-semibold text-primary">
-                                Where old instruments find new life.
+                                Where old instruments find new life.<br>
                                 Because every instrument deserves a second life.</p>
                         </div>
 

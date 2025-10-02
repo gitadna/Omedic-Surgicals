@@ -1,16 +1,16 @@
-<link rel="stylesheet" href="<?= CSS_ASSET_URL . "navbar.css" ?>">
+<?php include(APPPATH . 'Views/user/head.php'); ?>
 <header class="header">
     <nav class="nav container_navbar">
         <div class="nav__data">
             <a href="<?= site_url('/') ?>" class="nav__logo">
                 <img src="<?= ASSET_URL . 'omedic_surgical_logo.png' ?>" alt="Company Logo" class="nav_logo"
-                    style="object-fit: contain; max-width: 100px;max-height: 70px">
+                    style="object-fit: contain; max-width: 80px;max-height: 70px">
             </a>
 
 
             <div class="nav__toggle" id="nav-toggle">
-                <i class="ri-menu-line nav__toggle-menu"></i>
-                <i class="ri-close-line nav__toggle-close"></i>
+                <i class="fa fa-bars nav__toggle-menu"></i>
+                <i class="fa fa-times nav__toggle-close"></i>
             </div>
         </div>
 
@@ -41,11 +41,11 @@
 </header>
 
 <a href="tel:+7574022543" class="floating-call-btn" title="Call Us">
-    <i class="fab fa-whatsapp"></i>
+    <i class="fa fa-phone"></i>
 </a>
 <a href="https://wa.me/7574022543" class="floating-call-btn-whatsapp" title="Call Us">
     <i class="fab fa-whatsapp"></i>
 </a>
 
-<!--=============== MAIN JS ===============-->
-<script src="assets/js/navbar.js"></script>
+<script src="<?= JS_ASSET_URL . "navbar.js" ?>"></script>
+

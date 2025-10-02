@@ -7,6 +7,12 @@
 </head>
 
 <style>
+        .lead{
+            color: #000000;
+        }
+        .customize-text{
+            color: #000000;
+        }
     /* Customize Instrument Sets Button */
     .customize-button {
         background: #0066cc;
@@ -136,7 +142,7 @@
                     <div class="glass-card p-3 h-100 d-flex flex-column justify-content-between">
                         <div>
                             <div class="glass-img-wrapper mb-3 text-center">
-                                <img src="<?= MICRO_ASSET_URL . 'micro_instrument_box.jpg' ?>"
+                                <img src="<?= MICRO_ASSET_URL . 'micro_instrument_box.jpg' ?>" onclick="openModal(this.src)"
                                     class="img-fluid product-img mx-auto d-block" alt="Micro Scissor"
                                     style="max-height: 300px; width: 100%; object-fit: cover;">
                             </div>
@@ -153,7 +159,7 @@
                     <div class="glass-card p-3 h-100 d-flex flex-column justify-content-between">
                         <div>
                             <div class="glass-img-wrapper mb-3 text-center">
-                                <img src="<?= MICRO_ASSET_URL . 'skin_grafting_box.jpg' ?>"
+                                <img src="<?= MICRO_ASSET_URL . 'skin_grafting_box.jpg' ?>" onclick="openModal(this.src)"
                                     class="img-fluid product-img mx-auto d-block" alt="Needle Holder"
                                     style="max-height: 300px; width: 100%; object-fit: cover;">
                             </div>
@@ -170,7 +176,7 @@
                     <div class="glass-card p-3 h-100 d-flex flex-column justify-content-between">
                         <div>
                             <div class="glass-img-wrapper mb-3 text-center">
-                                <img src="<?= MICRO_ASSET_URL . 'double_layer_box.jpg' ?>"
+                                <img src="<?= MICRO_ASSET_URL . 'double_layer_box.jpg' ?>" onclick="openModal(this.src)"
                                     class="img-fluid product-img mx-auto d-block" alt="Tissue Forceps"
                                     style="max-height: 350px; width: 100%; object-fit: cover;">
                             </div>
@@ -214,18 +220,16 @@
 
                     <!-- Body -->
                     <div class="modal-body px-4">
-                        <p class="lead">
-                            At <strong>Omedic Surgicals</strong> we understand that every surgical setup is unique.
-                            That’s why we offer fully <span class="highlight">customizable sterilization trays and
-                                boxes</span> designed to meet your exact requirements.
+                        <p class="customize-text">
+                            At Omedic Surgicals we understand that every surgical setup is unique.
+                            That’s why we offer fully customizable sterilization trays and
+                                boxes designed to meet your exact requirements.
                         </p>
 
-                        <p>
-                            Whether you need <span class="highlight">specific dimensions</span>, <span
-                                class="highlight">unique compartment layouts</span>, <span class="highlight">laser
-                                marking</span>, <span class="highlight">silicone inserts</span>, or <span
-                                class="highlight">special finishes</span> – we build it the way you want.
-                            Our trays and boxes are manufactured with <strong>high-quality, durable materials</strong>
+                        <p class="customize-text">
+                            Whether you need specific dimensions, unique compartment layouts, laser
+                                marking,silicone inserts, or special finishes – we build it the way you want.
+                            Our trays and boxes are manufactured with high-quality, durable materials
                             to ensure maximum protection, sterilization safety, and longevity.
                         </p>
 
@@ -239,7 +243,7 @@
                             <li class="custom-bullet"><span></span> Engineered for easy handling and long life</li>
                         </ul>
 
-                        <p class="mt-3">
+                        <p class="mt-3 customize-text">
                             Your instruments deserve the best care – and so do you. With our customization service, you
                             don’t have to adjust to standard trays; instead, we design trays and boxes that adjust to
                             you.
@@ -249,8 +253,8 @@
                             Your requirement. Your design. Our expertise.
                         </p>
 
-                        <div class="cta-box mt-4">
-                            📩 <strong>Get in touch today</strong> to discuss your sterilization tray requirements and
+                        <div class="cta-box mt-4 customize-text">
+                            📩 Get in touch today to discuss your sterilization tray requirements and
                             let us build the perfect solution for you.
                         </div>
                     </div>
@@ -263,6 +267,16 @@
                 </div>
             </div>
         </div>
+        
+        <div class="modal fade" id="imageModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered text-center">
+            <div class="modal-content bg-transparent border-0 shadow-none">
+                <div class="modal-body p-0">
+                    <img id="modalImage" class="modal-img" src="" alt="Expanded Product">
+                </div>
+            </div>
+        </div>
+    </div>
 
 
         <?php include __DIR__ . '/../footer.php'; ?>

@@ -28,8 +28,9 @@
                         <div class="col">
                             <div class="glass-card p-3 h-100 d-flex flex-column justify-content-between">
                                 <div>
-                                    <div class="glass-img-wrapper mb-3 text-center" onmousemove="zoomImage(event, this)">
-                                        <img src="<?= UPLOAD_URL . $product['image'] ?>"
+                                    <div class="glass-img-wrapper mb-3 text-center" >
+                                        
+                                        <img src="<?= UPLOAD_URL . $product['image'] ?>" onclick="openModal(this.src)"
                                             class="img-fluid product-img mx-auto d-block" alt="<?= esc($product['name']) ?>"
                                             style="max-height: 300px; max-width: 100%; width: 100%; object-fit: cover;">
                                     </div>
@@ -71,6 +72,16 @@
             <?php else: ?>
                 <p class="text-center text-muted">No Tray products found.</p>
             <?php endif; ?>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="imageModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered text-center">
+            <div class="modal-content bg-transparent border-0 shadow-none">
+                <div class="modal-body p-0">
+                    <img id="modalImage" class="modal-img" src="" alt="Expanded Product">
+                </div>
+            </div>
         </div>
     </div>
 

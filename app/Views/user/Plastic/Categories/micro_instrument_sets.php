@@ -188,7 +188,13 @@
             padding-left: 28px;
             font-size: 1rem;
             line-height: 1.6;
-            color: #333;
+            color: #000000;
+        }
+        .lead{
+            color: #000000;
+        }
+        .customize-text{
+            color: #000000;
         }
 
         .custom-bullet span {
@@ -550,7 +556,7 @@
 
                 <!-- Header -->
                 <div class="modal-header border-0 pb-0">
-                    <h5 class="modal-title fw-bold text-gradient" id="customizeModalLabel">
+                    <h5 class="modal-title fw-bold text-black" id="customizeModalLabel">
                         <i class="bi bi-tools me-2"></i> Customised Micro Instruments – Tailored to Your Needs
                     </h5>
                     <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal"
@@ -559,18 +565,16 @@
 
                 <!-- Body -->
                 <div class="modal-body px-4">
-                    <p class="lead">
-                        At <strong>Omedic Surgicals</strong>, we understand that every surgeon, researcher, and medical
-                        professional has unique requirements. That’s why we specialise in <span
-                            class="highlight">customising micro instruments</span> to match your specific needs and
+                    <p class="customize-text">
+                        At Omedic Surgicals, we understand that every surgeon, researcher, and medical
+                        professional has unique requirements. That’s why we specialise in customising micro instruments to match your specific needs and
                         preferences.
                     </p>
 
-                    <p>
-                        Whether it’s <span class="highlight">adjusting dimensions</span>, <span
-                            class="highlight">modifying design</span>, or <span class="highlight">developing a
-                            completely new concept</span>, our team works closely with you to create instruments that
-                        enhance <strong>precision, comfort, and performance</strong>.
+                    <p class="customize-text">
+                        Whether it’s adjusting dimensions, modifying design, or developing a
+                            completely new concept, our team works closely with you to create instruments that
+                        enhance precision, comfort, and performance.
                     </p>
 
                     <!-- Blue shaded bullet points -->
@@ -581,12 +585,12 @@
                         <li class="custom-bullet"><span></span> Reliable, durable, and ergonomic</li>
                     </ul>
 
-                    <p class="mt-3">
+                    <p class="mt-3 customize-text">
                         With years of expertise and a commitment to innovation, we ensure that your customised
                         instruments are not just tools, but trusted partners in your work.
                     </p>
 
-                    <div class="cta-box mt-4">
+                    <div class="cta-box mt-4 customize-text">
                         📩 <strong>Get in touch today</strong> to discuss your requirements and let us design the
                         perfect solution for you.
                     </div>

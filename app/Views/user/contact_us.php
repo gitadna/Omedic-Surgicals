@@ -44,7 +44,7 @@
                     <a href="https://www.google.com/maps/place/281+2nd+Floor+Sainath+Apartment+Lahoti+Compound,+Kalyan+-+Bhiwandi+Rd,+Bhiwandi,+Maharashtra+421302"
                         target="_blank"
                         class="d-flex flex-column align-items-center text-decoration-none text-primary fw-semibold mt-3 mt-md-0 ms-md-3">
-                        <img src="../assets/google-map-icon.png" alt="Google Maps" style="width: 32px; height: 32px;" />
+                        <img src="<?= ASSET_URL . 'google-map-icon.png' ?>" alt="Google Maps" style="width: 32px; height: 32px;" />
                         <span style="font-size: 12px; margin-top: 4px;text-align: center;">Click Here!</span>
                     </a>
                 </div>
@@ -63,45 +63,9 @@
 
 
 
-        <!-- <div class="container contact-wrapper">
-            <div class="contact-box">
-
-                <div class="contact-left">
-                    <h3>Contact Us</h3>
-                    <div class="info-item"><i class="fas fa-map-marker-alt"></i> 23 Avenue de Paris, 75012 Paris</div>
-                    <div class="info-item"><i class="fas fa-envelope"></i> hello@omedic.com</div>
-                    <div class="info-item"><i class="fas fa-phone"></i> +91-7574022543</div>
-                    <div class="info-item"><i class="fas fa-user"></i> Omedic Surgicals</div>
-                    <div class="social-icons mt-3">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-
-
-                <div class="contact-right">
-                    <h3>Get in Touch</h3>
-                    <p>Feel free to drop us a line below!</p>
-                    <form action="<?= site_url('contactus/save_lead') ?>" method="post">
-                        <input type="text" name="name" class="form-control" placeholder="Your Name" required>
-                        <input type="email" name="email" class="form-control" placeholder="Email Address" required>
-                        <input type="text" name="mobile" class="form-control" placeholder="Mobile Number" required>
-                        <textarea name="note" class="form-control" placeholder="Your message..."></textarea>
-                        <button type="submit" class="btn btn-send mt-3"><i
-                                class="fas fa-paper-plane me-2"></i>Send</button>
-                    </form>
-
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-
-
-
+    
         <div class="container">
-            <div class="row align-items-center min-vh-100">
+            <div class="row align-items-center">
 
                 <div class="col-md-6 d-none d-md-block text-center">
                     <img src="<?= ASSET_URL . 'omedic_surgical_logo.png' ?>" alt="Company Logo" class="img-fluid"

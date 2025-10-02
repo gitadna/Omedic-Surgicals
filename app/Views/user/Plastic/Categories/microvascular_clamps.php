@@ -32,9 +32,9 @@
                                     <!-- Image with hover zoom and click-to-expand -->
                                     <div class="glass-img-wrapper mb-3 text-center"
                                         onclick="openModal('<?= UPLOAD_URL . $product['image'] ?>')">
-                                        <img src="<?= UPLOAD_URL . $product['image'] ?>"
+                                        <img src="<?= UPLOAD_URL . $product['image'] ?>" onclick="openModal(this.src)"
                                             class="img-fluid product-img mx-auto d-block" alt="<?= esc($product['name']) ?>"
-                                            style="max-height: 300px; width: 100%; object-fit: cover;">
+                                            style="max-height: 300px; max-width: 100%; width: 100%; object-fit: cover;">
                                     </div>
 
                                     <h5 class="fw-bold text-dark mb-2 fs-4"><?= esc($product['name']) ?></h5>
@@ -49,6 +49,16 @@
             <?php else: ?>
                 <p class="text-center text-muted">No Micro Scissors products found.</p>
             <?php endif; ?>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="imageModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered text-center">
+            <div class="modal-content bg-transparent border-0 shadow-none">
+                <div class="modal-body p-0">
+                    <img id="modalImage" class="modal-img" src="" alt="Expanded Product">
+                </div>
+            </div>
         </div>
     </div>
 

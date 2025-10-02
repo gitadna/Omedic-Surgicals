@@ -32,6 +32,7 @@
             background-color: #75ade8ff;
             border: none
         }
+        
     </style>
 
 </head>
@@ -46,10 +47,7 @@
                     <img src="<?= PLASTIC_ASSET_URL . 'slide1.png' ?>" class="d-block w-100"
                         alt="Microsurgical forceps" />
                 </div>
-                <div class="carousel-item">
-                    <img src="<?= PLASTIC_ASSET_URL . 'slide2.png' ?>" class="d-block w-100"
-                        alt="Delicate scissors for plastic surgery" />
-                </div>
+                
                 <div class="carousel-item">
                     <img src="<?= PLASTIC_ASSET_URL . 'slide3.png' ?>" class="d-block w-100"
                         alt="Retractors and fine tips" />
@@ -64,10 +62,10 @@
                     Delivering the accuracy, comfort, and durability surgeons demand in the operating room.
                 </p>
                 <div class="d-flex gap-3">
-                    <a href="#instruments"
-                        class="btn btn-primary animate__animated animate__fadeInLeft animate__delay-2s explore-button">
-                        Customize Instrument
-                    </a>
+                    
+                    <button type="button" class="btn btn-primary animate__animated animate__fadeInLeft animate__delay-2s explore-button" data-bs-toggle="modal" data-bs-target="#customizeInstrumentsModal">
+                            Customize Instruments
+                        </button>
                     <a href="<?= site_url('contactus') ?>"
                         class="btn btn-primary animate__animated animate__fadeInLeft animate__delay-2s explore-button">
                         Request a Quote
@@ -95,8 +93,8 @@
 
 
     <!-- Soft-toned banner: headline, subheadline, CTAs -->
-    <section class="container py-5">
-        <div class="text-center mb-4">
+    <section class="container-fluid pb-5 pt-5 mt-10 mb-5 bg-light ">
+        <div class="text-center">
             <h2 class="section-title">Why Choose us</h2>
             <p class="section-subtitle">
                 At Omedic Surgicals, we turn precision into perfection. Our micro instruments are
@@ -139,7 +137,7 @@
 
 
     <!-- Instruments Preview: 5 key cards -->
-    <section id="instruments" class="container">
+    <section id="instruments" class="container mb-5 mt-5 pb-5 pt-5">
         <div class="text-center mb-4">
             <h2 class="section-title">Plastic Surgery Instrument Categories</h2>
             <p class="section-subtitle">
@@ -165,7 +163,7 @@
                     <div class="p-3">
                         <h5 class="mb-2">Micro Needle Holder</h5>
                         <p class="text-muted mb-3">Precision cutting with minimal tissue trauma.</p>
-                        <a href="<a href=" <?= site_url('microneedleholder') ?>"
+                        <a href="<?= site_url('microneedleholder') ?>"
                             class="btn btn-sm btn-outline-primary">Explore</a>
                     </div>
                 </div>
@@ -223,8 +221,8 @@
 
 
     <!-- Testimonials Section -->
-    <section class="testimonials container">
-        <div class="text-center mb-5">
+    <section class="container-fluid pb-5 pt-5 mt-5 mb-5 bg-light">
+        <div class="text-center">
             <h2 class="section-title">What Our Clients Say</h2>
             <p class="section-subtitle">Trusted by surgeons worldwide for unmatched precision and quality.</p>
         </div>
@@ -234,10 +232,10 @@
                     <p class="testimonial-quote">"The micro forceps are unbelievably precise. They’ve improved my
                         surgical accuracy immensely."</p>
                     <div class="testimonial-author">
-                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Dr. James Carter">
+                        <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Dr. James Carter">
                         <div>
-                            <h6>Dr. James Carter</h6>
-                            <small>Plastic Surgeon, USA</small>
+                            <h6>Dr. Shivam Oza</h6>
+                            <small>Plastic Surgeon, India</small>
                         </div>
                     </div>
                 </div>
@@ -247,10 +245,10 @@
                     <p class="testimonial-quote">"Lightweight and perfectly balanced instruments that reduce fatigue in
                         long procedures."</p>
                     <div class="testimonial-author">
-                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Dr. Amelia Wong">
+                        <img src="https://randomuser.me/api/portraits/men/12.jpg" alt="Dr. Amelia Wong">
                         <div>
-                            <h6>Dr. Amelia Wong</h6>
-                            <small>Reconstructive Specialist, Singapore</small>
+                            <h6>Dr. Pavan Kulkarni</h6>
+                            <small>Reconstructive Specialist, India</small>
                         </div>
                     </div>
                 </div>
@@ -260,10 +258,10 @@
                     <p class="testimonial-quote">"Omedic’s customization options mean I can have instruments exactly to
                         my preference."</p>
                     <div class="testimonial-author">
-                        <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="Dr. Luis Fernandez">
+                        <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Dr. Luis Fernandez">
                         <div>
-                            <h6>Dr. Luis Fernandez</h6>
-                            <small>Microsurgery Expert, Spain</small>
+                            <h6>Dr. Tejas Chaplot</h6>
+                            <small>Microsurgery Expert, India</small>
                         </div>
                     </div>
                 </div>
@@ -272,7 +270,7 @@
     </section>
 
 
-    <div class="modal fade" id="customizeModal" tabindex="-1" aria-labelledby="customizeModalLabel" aria-hidden="true">
+    <div class="modal fade" id="customizeInstrumentsModal" tabindex="-1" aria-labelledby="customizeInstrumentsModal" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
 
@@ -284,16 +282,17 @@
 
                 <!-- Modal Body -->
                 <div class="modal-body">
-                    Don’t settle for pre-made—create a micro instrument set that’s truly yours.
+                    Don’t settle for pre-made, Create a micro instrument set that’s truly yours.
                     Pick your own scissors, forceps, and other instruments exactly as you need.
                     Customized, precise, and designed for <b>your workflow</b>.
                 </div>
+                
+                 <div class="modal-footer border-0">
 
-                <!-- Modal Footer -->
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <a href="#instruments" class="btn btn-primary">Start Customizing</a>
+                    <a href="<?= site_url('contactus') ?>" class="btn btn-primary rounded-pill px-4 w-100">Contact Us</a>
                 </div>
+
+                
 
             </div>
         </div>

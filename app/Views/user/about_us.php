@@ -13,7 +13,7 @@
         <p class="lead text-center mb-5">Delivering precision, quality, and innovation in microsurgical instruments.</p>
 
         <div class="row mb-4">
-            <div class="col-md-6 mb-4">
+            <div class="col-md-6 mb-5">
                 <div class="info-card d-flex align-items-start">
                     <i class="fas fa-hospital-user info-icon"></i>
                     <div>
@@ -22,7 +22,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 mb-4">
+            <div class="col-md-6 mb-5">
                 <div class="info-card d-flex align-items-start">
                     <i class="fas fa-cogs info-icon"></i>
                     <div>
@@ -33,6 +33,7 @@
                 </div>
             </div>
         </div>
+        <br>
 
         <p><span class="highlight">Started in August 2019</span>, Omedic Surgicals has quickly risen to become the go-to
             marquee in the field of microsurgical instruments.</p>
@@ -42,6 +43,7 @@
         </p>
         <p><strong>Customization</strong> is our strength. We offer tailor-made solutions and even post-warranty support
             including repair and maintenance.</p>
+            <br>
 
         <div class="row mt-5">
             <div class="col-md-4 mb-4">

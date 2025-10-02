@@ -11,4 +11,4 @@
 <link rel="stylesheet" href="<?= CSS_ASSET_URL . "footer.css" ?>">
 <link rel="stylesheet" href="<?= CSS_ASSET_URL . "main.css" ?>">
 <link rel="stylesheet" href="<?= CSS_ASSET_URL . "home.css" ?>">
-<link rel="stylesheet" href="<?= CSS_ASSET_URL . "style.css" ?>">'
+<link rel="stylesheet" href="<?= CSS_ASSET_URL . "style.css" ?>">

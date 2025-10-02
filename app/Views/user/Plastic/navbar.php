@@ -4,7 +4,7 @@
 <head>
     <?php include(APPPATH . 'Views/user/head.php'); ?>
 
-    <title>Responsive navigation bar - Bedimcode</title>
+    <title>Omedic Surgicals</title>
 </head>
 
 <body>
@@ -16,14 +16,14 @@
                 <div class="nav__mobile-group">
                     <a href="<?= site_url('/') ?>" class="nav__logo">
                         <img src="<?= ASSET_URL . 'omedic_surgical_logo.png' ?>" alt="Company Logo" class="nav_logo"
-                            style="object-fit: contain; max-width: 100px;max-height: 70px">
+                            style="object-fit: contain; max-width: 80px;max-height: 70px">
                     </a>
 
                 </div>
                 <!-- Hamburger Toggle -->
                 <div class="nav__toggle" id="nav-toggle">
-                    <i class="ri-menu-line nav__toggle-menu"></i>
-                    <i class="ri-close-line nav__toggle-close"></i>
+                    <i class="fa fa-bars nav__toggle-menu"></i>
+                    <i class="fa fa-times nav__toggle-close"></i>
                 </div>
 
 
@@ -84,9 +84,13 @@
                         <a href="<?= site_url('contactus') ?>" class="nav__link">Contact Us</a>
                     </li>
                     <li>
-                        <a href="<?= site_url('neuro_home') ?>" class="nav__link"><button type="button"
-                                class="btn btn-primary category_button">Neuro Surgery</button></a>
-                    </li>
+    <a href="<?= site_url('neuro_home') ?>" class="nav__link">
+        <button type="button" class="btn btn-primary category_button">
+            <i class="fa fa-random me-2"></i> Neuro Surgery
+        </button>
+    </a>
+</li>
+
 
 
 
@@ -96,16 +100,16 @@
 
     </header>
 
-    <a href="tel:+7574022543" class="floating-call-btn" title="Call Us">
+    <a href="https://wa.me/7574022543" class="floating-call-btn-whatsapp" title="Whatsapp Us">
         <i class="fab fa-whatsapp"></i>
     </a>
-    <a href="https://wa.me/7574022543" class="floating-call-btn-whatsapp" title="Call Us">
-        <i class="fab fa-whatsapp"></i>
+    <a href="tel:+7574022543" class="floating-call-btn" title="Call Us">
+        <i class="fa fa-phone"></i>
     </a>
 
 
     <!--=============== MAIN JS ===============-->
-    <script src="assets/js/navbar.js"></script>
+<script src="<?= JS_ASSET_URL . "navbar.js" ?>"></script>    
 </body>
 
 </html>
